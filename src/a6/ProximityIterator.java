@@ -58,6 +58,7 @@ public class ProximityIterator implements Iterator<Driver> {
 					
 				}
 			
+			nextDriver = null;
 			return false;
 				
 			}
