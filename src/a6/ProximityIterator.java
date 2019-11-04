@@ -17,6 +17,9 @@ public class ProximityIterator implements Iterator<Driver> {
 //	all of the Driver objects in the collection.
 //	Store this iterator in an instance field.
 
+		if (driver_pool == null) {
+			throw new IllegalArgumentException("Null");
+		}
 		this.all_Drivers = driver_pool.iterator();
 
 //Use an instance field to store the next driver that matches the proximity limit.
@@ -92,5 +95,7 @@ public class ProximityIterator implements Iterator<Driver> {
 //	Now return the value of the local variable that you copied the next driver to.
 
 	}
+	
+
 
 }
