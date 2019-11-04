@@ -20,6 +20,11 @@ public class ProximityIterator implements Iterator<Driver> {
 		if (driver_pool == null) {
 			throw new IllegalArgumentException("Null");
 		}
+		
+		if (client_position == null) {
+			throw new IllegalArgumentException("Null Position");
+		}
+		
 		this.all_Drivers = driver_pool.iterator();
 
 //Use an instance field to store the next driver that matches the proximity limit.
