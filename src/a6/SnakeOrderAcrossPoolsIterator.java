@@ -50,7 +50,10 @@ public class SnakeOrderAcrossPoolsIterator implements Iterator<Driver> {
 		}
 		int flag_index = c_Index;
 		
-		while (flag) {
+		while (flag) {//final jedi test
+			if (_driver_pools_iterators.isEmpty()) {
+				return false;
+			}
 			while (_count_Up) {
 				while (c_Index < _list_size) {
 					if (_driver_pools_iterators.get(c_Index).hasNext()) {
