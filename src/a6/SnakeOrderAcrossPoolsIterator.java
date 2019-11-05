@@ -97,7 +97,7 @@ public class SnakeOrderAcrossPoolsIterator implements Iterator<Driver> {
 	}
 	
 	
-	//returns next iterator
+	//returns next iterator/
 	@Override
 	public Driver next() {
 		if (!(hasNext())) {
